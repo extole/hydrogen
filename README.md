@@ -45,6 +45,35 @@ Hydrogen legacy v1 has been moved [to a separate repo](https://github.com/Shopif
 
 See the complete [Hydrogen docs](https://shopify.dev/custom-storefronts/hydrogen).
 
+## Getting started with Nix/NixOS
+
+A [Nix flake](https://nix.dev/concepts/flakes) is provided for a reproducible development environment with the correct Node.js and pnpm versions.
+
+**Requirements:**
+
+- [Nix](https://nixos.org/download/) with flakes enabled
+
+1. Enter the development shell:
+
+   ```bash
+   nix develop
+   ```
+
+2. Install dependencies and build:
+
+   ```bash
+   pnpm install
+   pnpm run build
+   ```
+
+3. Run the dev server:
+
+   ```bash
+   pnpm run dev
+   ```
+
+The dev shell provides Node.js 22 and pnpm 10, matching the project's engine requirements.
+
 ## Packages in this repo
 
 Hydrogen is organized as a [monorepo](https://monorepo.tools/), which includes multiple packages that can be used together.

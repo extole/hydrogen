@@ -152,3 +152,6 @@ examples/express/build
 
 # CalVer temp file (created by detect-calver-bump-type.js, consumed by enforce-calver-ci.js)
 .changeset/.calver-bump-type
+
+# Nix
+result
